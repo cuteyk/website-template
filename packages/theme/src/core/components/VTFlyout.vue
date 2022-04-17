@@ -14,9 +14,7 @@ const props = defineProps<{
 
 const open = ref(false)
 const elRef = ref<HTMLElement>()
-const onBlur = () => {
-  open.value = false
-}
+const onBlur = () => { open.value = false }
 
 useFocusContainer({
   elRef,

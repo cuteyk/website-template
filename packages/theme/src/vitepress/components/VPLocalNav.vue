@@ -20,7 +20,7 @@ function scrollToTop() {
       :aria-expanded="open"
       aria-controls="VPSidebarNav"
       @click="$emit('open-menu')"
-    >
+      >
       <VTIconAlignLeft class="menu-icon" />
       <span class="menu-text">Menu</span>
     </button>

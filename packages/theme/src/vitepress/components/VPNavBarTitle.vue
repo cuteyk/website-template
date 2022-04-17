@@ -1,22 +1,13 @@
 <template>
-  <a class="VPNavBarTitle" href="/" v-if="host == 'm7s.live'">
-    <Logo></Logo>
-    <div class="logo">Monibuca</div>
-  </a>
-  <a class="VPNavBarTitle" href="/" v-if="host == 'rebebuca.com'">
-    <img src="../imgs/rebebuca.png" alt="" srcset="">
-    <div class="logo">Rebebuca</div>
-  </a>
-  <a class="VPNavBarTitle" href="/" v-else>
-    <img src="../imgs/rebebuca.png" alt="" srcset="">
-    <div class="logo">Rebebuca</div>
-  </a>
+  <div>
+    <a class="VPNavBarTitle" href="/">
+      <img src="../imgs/rebebuca.png" alt="" srcset="">
+      <div class="logo">Rebebuca</div>
+    </a>
+  </div>
 </template>
 
 <script lang="ts" setup>
-import { Logo } from '@m7s/ui/vue'
-import { ref } from 'vue'
-const host = ref(window.location.host)
 </script>
 
 <style scoped>

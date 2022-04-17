@@ -49,9 +49,7 @@ const pageClass = computed(() => {
             v-if="theme.editLink && frontmatter.editLink !== false"
           >
             <VTIconEdit class="vt-icon" />
-            <VTLink :href="repoUrl" :no-icon="true">{{
-              theme.editLink.text
-            }}</VTLink>
+            <VTLink :href="repoUrl" :no-icon="true">{{ theme.editLink.text }}</VTLink>
           </p>
         </main>
         <slot name="content-bottom" />
