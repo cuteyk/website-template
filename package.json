@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
-    "deploy": "turbo run build --scope=m7s-website --includeDependencies --no-deps",
+    "deploy:m7s": "turbo run build --scope=m7s-website --includeDependencies --no-deps",
+    "deploy:rebebuca": "turbo run build --scope=rebebuca-website --includeDependencies --no-deps",
     "format": "prettier --write ."
   },
   "turbo": {

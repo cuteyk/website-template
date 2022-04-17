@@ -49,6 +49,37 @@ importers:
       '@types/node': 16.11.26
       less: 4.1.2
 
+  apps/rebebuca-website:
+    specifiers:
+      '@m7s/shared': workspace:*
+      '@m7s/theme': workspace:*
+      '@m7s/ui': workspace:*
+      '@types/markdown-it': ^12.2.3
+      '@types/node': ^16.9.1
+      '@vue/repl': ^1.0.0
+      '@vue/theme': ^1.0.1
+      dynamics.js: ^1.1.5
+      gsap: ^3.9.0
+      highlight.js: ^11.5.0
+      less: ^4.1.2
+      vitepress: 0.22.2
+      vue: ^3.2.31
+    dependencies:
+      '@m7s/shared': link:../../packages/shared
+      '@m7s/theme': link:../../packages/theme
+      '@m7s/ui': link:../../packages/ui
+      '@vue/repl': 1.0.0_vue@3.2.32
+      '@vue/theme': 1.0.1_vue@3.2.32
+      dynamics.js: 1.1.5
+      gsap: 3.10.3
+      highlight.js: 11.5.1
+      vitepress: 0.22.2_less@4.1.2
+      vue: 3.2.32
+    devDependencies:
+      '@types/markdown-it': 12.2.3
+      '@types/node': 16.11.26
+      less: 4.1.2
+
   packages/shared:
     specifiers:
       tsup: ^5.11.11
